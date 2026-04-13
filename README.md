@@ -8,8 +8,9 @@ Public-facing resources for the [Vox Machina](https://play.google.com/store/apps
 
 [PRIVACY_POLICY.md](PRIVACY_POLICY.md)
 
-Vox Machina collects no data. Zero analytics, zero telemetry, zero network calls.
+Vox Machina collects no data. Zero analytics, zero telemetry. The app makes no network calls of its own.
 
+Scrobbling (optional): If you connect a Last.fm or ListenBrainz account, the app will send track metadata (title, artist, album) to that service when you play music. This is off by default, entirely opt-in, and governed by the respective service's own privacy policy. Credentials are stored locally on your device. Vox Machina receives nothing.
 ### FFmpeg Build Script
 
 [build_ffmpeg_android.sh](build_ffmpeg_android.sh)
