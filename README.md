@@ -1,6 +1,6 @@
 # Vox Machina — Public Resources
 
-Public-facing resources for the [Vox Machina](https://play.google.com/store/apps/details?id=com.example.voxmachinasecundus) Android USB audio engine.
+Public-facing resources for the [Vox Machina](https://play.google.com/store/apps/details?id=com.voxmachinaaudio.player) Android USB audio engine.
 
 ## Contents
 
