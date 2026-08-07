@@ -28,6 +28,16 @@ This script is published to satisfy LGPL 2.1 Section 6(b) — it provides the co
 
 **Requirements:** Linux or WSL, Android NDK 28+, make, nasm/yasm.
 
+### TagLib Source & Build Script
+
+[source/taglib/](source/taglib/) — [build_taglib_android.sh](build_taglib_android.sh)
+
+Complete corresponding source and relink recipe for the **taglib** metadata library (LGPL 2.1, elected over its MPL 1.1 dual half) bundled in the application.
+
+Unlike FFmpeg, taglib is **modified** (a one-file include-guard patch, published in [source/taglib/patches/](source/taglib/patches/)) and **statically linked** into a combined shared object. Its discharge is therefore **LGPL 2.1 §6(a)** — complete corresponding source (upstream `v2.3.1` + the published patch + format config) plus this build script, with the Vox Machina object code needed to relink the combined library available on request. See [source/taglib/README.md](source/taglib/README.md) for provenance, pins, and the relink procedure.
+
+**To rebuild taglib:** set `ANDROID_NDK_HOME` and run `./build_taglib_android.sh`.
+
 ## License
 
-The FFmpeg build script and privacy policy in this repository are provided under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). FFmpeg itself is licensed under [LGPL 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html).
+The FFmpeg build script, TagLib build script, TagLib patch, and privacy policy in this repository are provided under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). FFmpeg and TagLib are each licensed under [LGPL 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) (TagLib elected over its MPL 1.1 dual half).
